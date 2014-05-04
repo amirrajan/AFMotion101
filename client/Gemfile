@@ -4,4 +4,5 @@ gem 'rake'
 gem 'afmotion'
 gem 'webstub'
 gem 'bubble-wrap'
+gem 'motion-stump'
 # Add your dependencies here:
