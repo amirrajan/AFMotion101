@@ -1,8 +1,12 @@
 class SampleService
-  attr_accessor :result
+  attr_accessor :result, :base_path
+
+  def initialize
+    @base_path = "http://localhost:3000"
+  end
 
   def get
-    AFMotion::JSON.get("http://localhost:3000/") do |result|
+    AFMotion::JSON.get(@base_path + "/") do |result|
       @result = result.object
     end
   end

@@ -17,11 +17,27 @@ PODS:
   - AFNetworking/Serialization (2.1.0)
   - AFNetworking/UIKit (2.1.0):
     - AFNetworking/NSURLConnection
+  - CocoaAsyncSocket (7.3.5)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+  - RoutingHTTPServer (1.0.0):
+    - CocoaHTTPServer (~> 2.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.1.0)
+  - RoutingHTTPServer
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
+  CocoaAsyncSocket: a3b6de9958961578b36eabb8e921efd95b13d80c
+  CocoaHTTPServer: 7c2fce6617f7fda0e3f4fc34f96e562caa7c7bd8
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  RoutingHTTPServer: 7436429cb81c560b55557a830d51367f3107d9cc
 
-COCOAPODS: 0.31.1
+COCOAPODS: 0.32.1
