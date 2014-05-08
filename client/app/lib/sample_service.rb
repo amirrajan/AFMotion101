@@ -5,7 +5,7 @@ class SampleService
     @base_path = "http://localhost:3000"
   end
 
-  def get(&callback)
+  def get(id = 0, &callback)
     AFMotion::JSON.get(@base_path + "/") do |result|
       if result.success?
         callback.call result.object
