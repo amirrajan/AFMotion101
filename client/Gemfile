@@ -6,4 +6,5 @@ gem 'webstub'
 gem 'bubble-wrap'
 gem 'motion-stump'
 gem 'motion-cocoapods'
-# Add your dependencies here:
+gem 'when-files-change'
+
